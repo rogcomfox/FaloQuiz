@@ -5,4 +5,10 @@
     <!--Auth String-->
     <string name="tv_sign_up">Don’t Have Account? Sign Up</string>
     <string name="btn_login">Login</string>
+    <string name="tv_forgot_pass">Forgot Password?</string>
+    <string name="til_pass">Password</string>
+    <string name="til_email">Email Address</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="til_name">Full Name</string>
+    <string name="till_pass_confirm">Confirm Password</string>
 </resources>

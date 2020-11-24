@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "566894699986",
+    "firebase_url": "https://faloquiz.firebaseio.com",
+    "project_id": "faloquiz",
+    "storage_bucket": "faloquiz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566894699986:android:aa0034a80f2727a9d2d40b",
+        "android_client_info": {
+          "package_name": "com.nusantarian.faloquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566894699986-ppqqr3rci1npsjtn1fsfbn4vvgtpjifh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1_08Cpf7DU2qn1Np4sgKVYvMdXEGJ9jY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566894699986-ppqqr3rci1npsjtn1fsfbn4vvgtpjifh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,16 +1,15 @@
 package com.nusantarian.faloquiz.ui.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.nusantarian.faloquiz.R
-import com.nusantarian.faloquiz.databinding.FragmentLandingBinding
+import androidx.fragment.app.Fragment
+import com.nusantarian.faloquiz.databinding.FragmentRegisterBinding
 
-class LandingFragment : Fragment() {
+class FragmentRegister : Fragment() {
 
-    private var _binding: FragmentLandingBinding? = null
+    private var _binding: FragmentRegisterBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -18,7 +17,7 @@ class LandingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentLandingBinding.inflate(inflater, container, false)
+        _binding = FragmentRegisterBinding.inflate(inflater, container, false)
         return binding.root
     }
 }
