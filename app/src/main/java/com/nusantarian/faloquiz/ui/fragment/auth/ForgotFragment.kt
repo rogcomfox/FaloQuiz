@@ -1,4 +1,4 @@
-package com.nusantarian.faloquiz.ui.fragment
+package com.nusantarian.faloquiz.ui.fragment.auth
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,19 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.nusantarian.faloquiz.R
-import com.nusantarian.faloquiz.databinding.FragmentLandingBinding
+import com.nusantarian.faloquiz.databinding.FragmentForgotBinding
 
-class LandingFragment : Fragment() {
 
-    private var _binding: FragmentLandingBinding? = null
+class ForgotFragment : Fragment() {
+
+    private var _binding: FragmentForgotBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        _binding = FragmentLandingBinding.inflate(inflater, container, false)
+        _binding = FragmentForgotBinding.inflate(inflater, container, false)
         return binding.root
     }
 }

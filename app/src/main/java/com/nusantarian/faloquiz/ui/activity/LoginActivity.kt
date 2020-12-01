@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import com.nusantarian.faloquiz.R
 import com.nusantarian.faloquiz.databinding.ActivityLoginBinding
-import com.nusantarian.faloquiz.ui.fragment.LoginFragment
+import com.nusantarian.faloquiz.ui.fragment.auth.LoginFragment
 
 class LoginActivity : AppCompatActivity(), FragmentManager.OnBackStackChangedListener {
 

@@ -1,15 +1,16 @@
-package com.nusantarian.faloquiz.ui.fragment
+package com.nusantarian.faloquiz.ui.fragment.auth
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import com.nusantarian.faloquiz.databinding.FragmentLoginBinding
+import com.nusantarian.faloquiz.R
+import com.nusantarian.faloquiz.databinding.FragmentLandingBinding
 
-class LoginFragment : Fragment() {
+class LandingFragment : Fragment() {
 
-    private var _binding: FragmentLoginBinding? = null
+    private var _binding: FragmentLandingBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -17,7 +18,7 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+        _binding = FragmentLandingBinding.inflate(inflater, container, false)
         return binding.root
     }
 }
