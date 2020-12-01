@@ -11,4 +11,9 @@
     <string name="btn_sign_up">Sign Up</string>
     <string name="til_name">Full Name</string>
     <string name="till_pass_confirm">Confirm Password</string>
+    <string name="tv_info_forgot_pass">Reset your password by entering your email address</string>
+    <string name="btn_reset_pass">Reset Password</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_chart">Statistics</string>
+    <string name="nav_profile">Profile</string>
 </resources>
