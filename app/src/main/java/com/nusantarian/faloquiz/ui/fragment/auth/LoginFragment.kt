@@ -23,7 +23,6 @@ class LoginFragment : Fragment(), View.OnClickListener {
         // Inflate the layout for this fragment
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
         ft = activity!!.supportFragmentManager.beginTransaction()
-        binding.tvSignUp.setOnClickListener(this)
         binding.tvForgotPass.setOnClickListener(this)
         binding.btnLogin.setOnClickListener(this)
         return binding.root
@@ -34,11 +33,7 @@ class LoginFragment : Fragment(), View.OnClickListener {
             R.id.btn_login ->
                 Toast.makeText(context, "Under Construction", Toast.LENGTH_SHORT).show()
             R.id.tv_forgot_pass ->
-                ft.replace(R.id.frame_auth, ForgotFragment())
-                    .addToBackStack(null)
-                    .commit()
-            R.id.tv_sign_up ->
-                ft.replace(R.id.frame_auth, FragmentRegister())
+                ft.replace(R.id.frame_landing, ForgotFragment())
                     .addToBackStack(null)
                     .commit()
         }

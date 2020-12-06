@@ -16,4 +16,6 @@
     <string name="nav_home">Home</string>
     <string name="nav_chart">Statistics</string>
     <string name="nav_profile">Profile</string>
+    <string name="tv_landing">Your Knowledge. Increased.</string>
+    <string name="img_landing">Landing Picture</string>
 </resources>

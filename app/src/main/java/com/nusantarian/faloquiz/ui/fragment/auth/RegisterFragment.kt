@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.nusantarian.faloquiz.databinding.FragmentRegisterBinding
 
-class FragmentRegister : Fragment() {
+class RegisterFragment : Fragment() {
 
     private var _binding: FragmentRegisterBinding? = null
     private val binding get() = _binding!!
