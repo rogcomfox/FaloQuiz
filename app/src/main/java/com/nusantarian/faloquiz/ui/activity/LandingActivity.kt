@@ -1,8 +1,7 @@
 package com.nusantarian.faloquiz.ui.activity
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import com.nusantarian.faloquiz.R
 import com.nusantarian.faloquiz.databinding.ActivityLandingBinding
@@ -21,14 +20,14 @@ class LandingActivity : AppCompatActivity(), FragmentManager.OnBackStackChangedL
         initFragment()
     }
 
-    private fun initFragment(){
+    private fun initFragment() {
         supportFragmentManager.beginTransaction()
             .add(R.id.frame_landing, LandingFragment())
             .commit()
     }
 
     override fun onBackStackChanged() {
-        TODO("Not yet implemented")
+
     }
 
     override fun onBackPressed() {

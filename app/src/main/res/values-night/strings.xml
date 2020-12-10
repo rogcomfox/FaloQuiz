@@ -13,9 +13,10 @@
     <string name="till_pass_confirm">Confirm Password</string>
     <string name="tv_info_forgot_pass">Reset your password by entering your email address</string>
     <string name="btn_reset_pass">Reset Password</string>
-    <string name="nav_home">Home</string>
-    <string name="nav_chart">Statistics</string>
-    <string name="nav_profile">Profile</string>
     <string name="tv_landing">Your Knowledge. Increased.</string>
     <string name="img_landing">Landing Picture</string>
+    <!--Message Text-->
+    <string name="text_empty">This Field is Empty</string>
+    <string name="text_email_not_match">Email Address Didn\'t Match</string>
+    <string name="text_pass_not_match">Password Didn\'t Match</string>
 </resources>
