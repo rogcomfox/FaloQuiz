@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.nusantarian.faloquiz.R
-import com.nusantarian.faloquiz.databinding.FragmentProfileBinding
+import com.nusantarian.faloquiz.databinding.FragmentEditProfileBinding
 
-class ProfileFragment : Fragment() {
+class EditProfileFragment : Fragment() {
 
-    private var _binding: FragmentProfileBinding? = null
+    private var _binding: FragmentEditProfileBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -18,8 +18,7 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        _binding = FragmentProfileBinding.inflate(inflater, container, false)
+        _binding = FragmentEditProfileBinding.inflate(inflater, container, false)
         return binding.root
     }
-
 }
