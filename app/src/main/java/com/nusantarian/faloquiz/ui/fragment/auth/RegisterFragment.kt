@@ -28,23 +28,24 @@ class RegisterFragment : Fragment(), View.OnClickListener {
         // Inflate the layout for this fragment
         _binding = FragmentRegisterBinding.inflate(inflater, container, false)
         auth = FirebaseAuth.getInstance()
-        binding.btnSignUp.setOnClickListener(this)
+        binding.btnRegister.setOnClickListener(this)
         return binding.root
     }
 
     override fun onClick(v: View) {
-        binding.progress.visibility = View.VISIBLE
-        val email = binding.tilEmail.editText?.text.toString()
-        val name = binding.tilName.editText?.text.toString()
-        val pass = binding.tilPass.editText?.text.toString()
-        val confirm = binding.tilPassConfirm.editText?.text.toString()
+        if (v.id == R.id.btn_register) {
+            binding.progress.visibility = View.VISIBLE
+            val email = binding.tilEmail.editText?.text.toString()
+            val name = binding.tilName.editText?.text.toString()
+            val pass = binding.tilPass.editText?.text.toString()
+            val confirm = binding.tilPassConfirm.editText?.text.toString()
 
-        if (!isValid(email, name, pass, confirm)) {
-            binding.progress.visibility = View.GONE
-        } else {
-            registerUser(email, name, pass)
+            if (!isValid(email, name, pass, confirm)) {
+                binding.progress.visibility = View.GONE
+            } else {
+                registerUser(email, name, pass)
+            }
         }
-
     }
 
     private fun registerUser(email: String, name: String, pass: String) {
