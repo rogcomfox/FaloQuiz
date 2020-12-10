@@ -19,4 +19,6 @@
     <string name="text_empty">This Field is Empty</string>
     <string name="text_email_not_match">Email Address Didn\'t Match</string>
     <string name="text_pass_not_match">Password Didn\'t Match</string>
+    <string name="ic_back">Back</string>
+    <string name="tv_profile">Profile</string>
 </resources>
