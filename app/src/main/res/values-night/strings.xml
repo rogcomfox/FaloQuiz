@@ -21,4 +21,7 @@
     <string name="text_pass_not_match">Password Didn\'t Match</string>
     <string name="ic_back">Back</string>
     <string name="tv_profile">Profile</string>
+    <string name="ic_language">Change Language</string>
+    <string name="btn_edit_profile">Edit Profile</string>
+    <string name="btn_log_out">Log Out</string>
 </resources>
