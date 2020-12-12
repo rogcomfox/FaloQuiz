@@ -65,7 +65,7 @@ class RegisterFragment : Fragment(), View.OnClickListener {
 
     private fun pushUserData(uid: String, email: String, name: String) {
         val data = FirebaseFirestore.getInstance().collection("users").document(uid)
-        val userData = User(email, name)
+        val userData = User(email, name, PROFILE_PICTURE)
         data.set(userData).addOnCompleteListener {
             if (it.isSuccessful) {
                 startActivity(Intent(context, MainActivity::class.java))
@@ -111,5 +111,8 @@ class RegisterFragment : Fragment(), View.OnClickListener {
             binding.tilName.isErrorEnabled
             true
         }
+    }
+    companion object{
+        const val PROFILE_PICTURE = "https://firebasestorage.googleapis.com/v0/b/faloquiz.appspot.com/o/default_profile%2Fman.png?alt=media&token=3315b22d-b249-494e-9fca-0b756918d7ff"
     }
 }
