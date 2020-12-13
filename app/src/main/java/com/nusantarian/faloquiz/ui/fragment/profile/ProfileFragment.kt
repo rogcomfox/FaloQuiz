@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.FragmentTransaction
+import coil.load
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.nusantarian.faloquiz.R
@@ -62,8 +63,12 @@ class ProfileFragment : Fragment(), View.OnClickListener {
         binding.progress.visibility = View.VISIBLE
         val uid = auth.currentUser?.uid!!
         val data = FirebaseFirestore.getInstance().collection("users").document(uid)
-        data.get().addOnCompleteListener {
-
+        data.get().addOnSuccessListener {
+            val name = it.getString("name")
+            val photo = it.getString("picture")
+            binding.tvFullName.text = name
+            binding.imgProfile.load(photo)
+            binding.progress.visibility = View.GONE
         }.addOnFailureListener {
             Toast.makeText(context, it.message, Toast.LENGTH_SHORT).show()
             binding.progress.visibility = View.GONE
