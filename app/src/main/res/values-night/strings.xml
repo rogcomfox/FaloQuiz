@@ -25,4 +25,5 @@
     <string name="btn_edit_profile">Edit Profile</string>
     <string name="btn_log_out">Log Out</string>
     <string name="btn_update_profile">Update Profile</string>
+    <string name="tv_all_quiz">All Quiz</string>
 </resources>

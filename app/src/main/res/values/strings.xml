@@ -26,4 +26,5 @@
     <string name="btn_log_out">Log Out</string>
     <string name="til_new_pass">New Password</string>
     <string name="btn_update_profile">Update Profile</string>
+    <string name="tv_all_quiz">All Quiz</string>
 </resources>
