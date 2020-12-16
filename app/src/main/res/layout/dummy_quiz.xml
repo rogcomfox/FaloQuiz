@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_easy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:translationZ="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_easy"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/circle_background"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_easy" />
+
+            <TextView
+                android:id="@+id/tv_easy_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_toEndOf="@id/img_easy"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Indonesian Birds"
+                android:textColor="@color/primary_dark"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_easy_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_easy_title"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/img_easy"
+                android:fontFamily="@font/poppins"
+                android:text="Easy"
+                android:textColor="#00909E"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        android:translationZ="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_medium"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="#FF6F01"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_medium" />
+
+            <TextView
+                android:id="@+id/tv_medium_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_toEndOf="@id/img_medium"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Herb Plant"
+                android:textColor="@color/primary_dark"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_medium_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_medium_title"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/img_medium"
+                android:fontFamily="@font/poppins"
+                android:text="Medium"
+                android:textColor="#FF6F01"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_hard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        android:layout_marginBottom="20dp"
+        android:translationZ="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_hard"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="#FD2F24"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_hard" />
+
+            <TextView
+                android:id="@+id/tv_hard_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_toEndOf="@id/img_hard"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Prehistoric animal and Plant"
+                android:textColor="@color/primary_dark"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_hard_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_hard_title"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/img_hard"
+                android:fontFamily="@font/poppins"
+                android:text="Hard"
+                android:textColor="#FD2F24"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

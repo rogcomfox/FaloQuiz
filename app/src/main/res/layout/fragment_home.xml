@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FAFAFA"
     tools:context=".ui.fragment.home.HomeFragment">
 
     <TextView
@@ -56,16 +57,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/search_quiz" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_quiz"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+    <FrameLayout
+        android:id="@+id/frame_quiz"
+        app:layout_constraintTop_toBottomOf="@id/tv_all_quiz"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="25dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_all_quiz" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/dummy_quiz"/>
+    </FrameLayout>
 
     <ProgressBar
         android:id="@+id/progress"
